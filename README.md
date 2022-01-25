@@ -7,14 +7,14 @@
 
 
 
-### 二、Leecode
+### 二、Leecode(1)
 
 
 
 
-#### 初级算法
+#### 初级算法(1)
 
 
-#### [Arrays](https://leetcode-cn.com/leetbook/detail/top-interview-questions-easy/)
+#### [1. Array](https://leetcode-cn.com/leetbook/detail/top-interview-questions-easy/)
 
 * [26.Remove Duplicates from Sorted Array.md](Code/Array/26.%20Remove%20Duplicates%20from%20Sorted%20Array.md)
