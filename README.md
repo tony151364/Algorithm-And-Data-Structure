@@ -3,6 +3,7 @@
 
 ### 一、[《小灰的算法之旅》笔记](XiaoHuiAlgorithmicJourney)
 * [chapter01 算法概述](XiaoHuiAlgorithmicJourney/chapter01算法概述.md)
+* [chapter02 数据结构基础](XiaoHuiAlgorithmicJourney/chapter02数据结构基础.md)
 
 
 
