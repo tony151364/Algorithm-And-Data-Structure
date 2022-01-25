@@ -17,4 +17,4 @@
 
 #### [Arrays](https://leetcode-cn.com/leetbook/detail/top-interview-questions-easy/)
 
-* [26.删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/solution/)
+* [26.Remove Duplicates from Sorted Array.md](Code/Array/26.%20Remove%20Duplicates%20from%20Sorted%20Array.md)
