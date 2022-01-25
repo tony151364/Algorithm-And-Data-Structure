@@ -6,4 +6,15 @@
 
 
 
+
 ### 二、Leecode
+
+
+
+
+#### 初级算法
+
+
+#### [Arrays](https://leetcode-cn.com/leetbook/detail/top-interview-questions-easy/)
+
+* [26.删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/solution/)
