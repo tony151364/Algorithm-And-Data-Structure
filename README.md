@@ -27,7 +27,9 @@
 
 #### 2.算法
 
-#### [3.数据结构](new-coder/3.数据结构.md)
+#### [3.数据结构]
+- [数组](Code/Array/Array.md)
+- [排序](Code/Sort/Sort.md)
 
 #### 4.数据库
 
