@@ -27,7 +27,7 @@
 
 #### 2.算法
 
-#### [3.数据结构]
+#### 3.数据结构
 - [数组](Code/Array/Array.md)
 - [排序](Code/Sort/Sort.md)
 
