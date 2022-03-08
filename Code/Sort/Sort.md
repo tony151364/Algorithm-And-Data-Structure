@@ -76,3 +76,5 @@ void SelectSort(RecType R[], int n)
 ## 六、基数排序
 
 ## 七、各种排序算法的比较和选择
+
+![sort-performance](sort-performance.png)
