@@ -1,5 +1,6 @@
 # 待办
 - [ ] https://www.nowcoder.com/test/question/done?tid=53222626&qid=98665
+- [ ] https://www.bilibili.com/video/BV1Pt4y197VZ/?spm_id_from=333.788.recommend_more_video.0
 - [X] 观看堆排序视频
 
 
@@ -37,6 +38,7 @@
 ## 二、插入排序
 - 插入排序：每次将一个待排序的元素按其关键字大小插入到前面已经排好序的子表中的适当位置，直到全部元素插入完成为止
 
+### 1.直接插入排序
 ```C
 // 直接插入排序(升序）- O(n^2)
 void InsertSort(RecType R[], int n)
@@ -56,6 +58,9 @@ void InsertSort(RecType R[], int n)
 }
 ```
 
+### 2.折半插入排序
+
+### 3.希尔排序
 
 ## 三、交换排序
 - **交换排序**：基本思想是
