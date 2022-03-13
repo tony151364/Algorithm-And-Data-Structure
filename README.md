@@ -21,7 +21,7 @@
 
 #### [1. Array](https://leetcode-cn.com/leetbook/detail/top-interview-questions-easy/)
 
-* [26.Remove Duplicates from Sorted Array.md](Code/Array/26.%20Remove%20Duplicates%20from%20Sorted%20Array.md)
+* [26.Remove Duplicates from Sorted Array.md](Code/Array/26.+Remove+Duplicates+from%20Sorted%20Array.md)
 
 
 ### [三、牛客网](https://www.nowcoder.com/exam/intelligent)
