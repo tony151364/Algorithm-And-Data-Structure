@@ -27,7 +27,8 @@
   
 - 归并排序
   - 二路归并
-
+  
+- 全局有序：该区域的元素的相对位置不在改变
 #### （2）不基于比较的排序算法
 - 基数排序
 
@@ -37,6 +38,7 @@
 
 ## 二、插入排序
 - 插入排序：每次将一个待排序的元素按其关键字大小插入到前面已经排好序的子表中的适当位置，直到全部元素插入完成为止
+- 插入排序都是局部有序区，而非全局有序区
 
 ### 1.直接插入排序
 ```C
@@ -59,8 +61,85 @@ void InsertSort(RecType R[], int n)
 ```
 
 ### 2.折半插入排序
+- **折半插入排序**(binary insert sort)：也称二分插入排序。由于有序区的元素是有序的，可以采用折半查找方法先在R[0..i-1]中找到插入位置，再通过移动元素进行插入。第 i 躺在R[low..high](初始时 low = 0, high = i - 1)中采用折半查找方法插入R[i]的位置为R[high+1], 再将R[high+1 .. i-1] 元素后移一个位置，并置R[high+1] = R[i]。high = i - 1 --> i = high + 1
+```C
+
+void BinInsertSort(RecType R[], int n)
+{
+    int i, j, low, high, mid;
+    RecType tmp;
+    for(i = 1; i < n; i++)
+    {
+        if(R[i].key < R[i-1].key)   // 反序时
+        {
+            tmp = R[i];
+            low = 0; high = i - 1;
+            while(low <= high)  // 在R[low ... high]中查找插入的位置
+            {
+                mid = (low + high)/2;
+                if(tmp.key < R[mid].key)
+                    high = mid - 1;
+                else
+                    low = mid + 1;
+            }
+            
+            for(j = i - 1; j >= high+1; j--)  // high+1是插入位置
+                R[J+1] = R[j];  // ???
+            R[high+1] = tmp;  // 插入tmp
+            
+        }
+    }
+}
+            
+```
 
 ### 3.希尔排序
+- **希尔排序**(shell sort)：也是一种插入排序算法，实际上是一种分组插入方法。基本思想是：先选取一个小于n的整数d<sub>1</sub>作为第一个增量，把表的全部元素分成d<sub>1</sub>组，将所有距离为d<sub>1</sub>的倍数的元素放在同一个组中，在各组内进行直接插入排序；然后取第二个增量d<sub>2</sub>( < d<sub>1</sub>)，重复上述的分组和排序，直到所取的增量d<sub>t</sub>=1 (d<sub>t</sub> < d<sub>t-1</sub> < ... < d<sub>2</sub> < d<sub>1</sub>)，即所有元素放在同一组进行直接插入为止。所以shell排序称为减少增量的排序方法。shell排序的最后一趟就是调用**直接插入排序**
+- 以上概述：
+    - ① d = n / 2
+    - ② 将排序序列分成d个组，在各组内进行**直接插入排序**
+    - ③ 递减 d = d / 2（向下取整），重复②，直到d = 1
+
+```C
+// 希尔排序算法 O(n^1.3)，不稳定
+void ShellSort(RecType R[], int n)
+{
+    int i, j, d;
+    RecType tmp;
+    d = n / 2;  // 增量置初值
+    
+    while(d > 0)  // 相比于直接插入，对d进行循环，每个记录都参加了排序
+    {
+        for(i = d; i < n; i++)
+        {
+            tmp = R[i];  // 对相隔d位置的元素组进行直接插入排序
+            j = i - d;
+            while(j >= 0 && tmp.key < R[j].key)
+            {
+                R[j+d] = R[j];
+                j = j - d;
+            }
+            R[j+d] = tmp;
+        }
+        d = d / 2;
+    }
+} 
+    
+// 部分直接插入排序，为了与希尔排序比较
+for( i = 1; i < n; i++)
+{
+    tmp = R[i];
+    j = i - 1;
+    while( j >= 0 && tmp.key < R[j].key)
+    {
+        R[j+1] = R[j];
+        j = j - 1;
+    }
+    R[j+1] = tmp;
+}
+
+```
+- 为什么希尔排序比直接插入排序好？
 
 ## 三、交换排序
 - **交换排序**：基本思想是
