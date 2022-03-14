@@ -33,7 +33,7 @@
 - [数组](Code/Array/Array.md)
 - [排序](Code/Sort/Sort.md)
 - [查找](Code/Search/Search.md)
-- [递归](Code/Recursion%20&%20Dynamic%20Programming)
+- [递归 和 动态规划](Code/Recursion%20&%20Dynamic%20Programming)
 - [树](Code/Tree/Tree.md)
 
 #### 3.数据库
