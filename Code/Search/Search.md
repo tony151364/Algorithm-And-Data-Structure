@@ -100,6 +100,21 @@ int BinSearch(RecType R[], int n, KeyType k)
 - **索引存储结构**(index storage structure)是在存储数据的同时还建立附加的索引表。索引表中的每一项称为索引项，索引项的一般形式为（关键字，地址）。OS中的内存管理就有这种方式
 - **分块查找**(block search)是一种性能介于索引查找和折半查找之间的查找算法。
 
+```C
+// 索引表的数据类型声明
+# define MAXI<索引表的最大长度>
+typedef struct
+{
+    KeyType key;
+    int link;  // 指向对应块的起始下标
+}IdxType;  // 索引表元素的类型
+```
+
+```C
+// 采用折半查找索引表的分块查找算法
+
+```
+
 
 # 三、树表的查找
 
