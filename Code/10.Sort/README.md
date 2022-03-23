@@ -363,5 +363,5 @@ void MergePass(RecType R[], int length, int n)  // 对整个排序序列进行�
 
 ## 七、各种排序算法的比较和选择
 
-![sort-performance](sort-performance.png)
+![sort_performance](sort_performance.png)
 
