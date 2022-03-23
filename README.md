@@ -30,12 +30,16 @@
 #### 1.Java
 
 #### 2.算法和数据结构
-- [数组](Code/Array/Array.md)
-- [排序](Code/Sort/Sort.md)
-- [查找](Code/Search/Search.md)
-- [递归 和 动态规划](Code/Recursion%20&%20Dynamic%20Programming)
-- [树](Code/Tree/Tree.md)
-- [图](Code/Graph/README.md)
+- [时空复杂度](Code/01.Begin)
+- [线性表](Code/02.Linear%20list)
+- [栈和队列](Code/03.Stack%20&%20Queue)
+- [串](Code/04.String)
+- [递归 和 动态规划](Code/05.Recursion%20&%20Dynamic%20Programming)
+- [数组和广义表](Code/06.Array%20&%20Generalized table)
+- [树和二叉树](Code/07.Tree%20&%20Binary%20tree)
+- [图](Code/08.Graph)
+- [查找](Code/09.Search)
+- [排序](Code/10.Sort)
 
 #### 3.数据库
 
