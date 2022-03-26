@@ -1,7 +1,11 @@
 # 待办
-- [ ] https://www.nowcoder.com/test/question/done?tid=53222626&qid=98665
-- [ ] https://www.bilibili.com/video/BV1Pt4y197VZ/?spm_id_from=333.788.recommend_more_video.0
+- [X] https://www.bilibili.com/video/BV1Pt4y197VZ/?spm_id_from=333.788.recommend_more_video.0  
+- [ ] ↑ 视频是看了，但是还有些不懂，下次把书上视频看了（归并排序）。
 - [X] 观看堆排序视频
+- [ ] 再看堆排序视频
+- [ ] https://www.nowcoder.com/test/question/done?tid=53222626&qid=98665
+- [ ] 默写算法+推到时空复杂度
+- [ ] 基数排序
 
 
 # 排序
@@ -84,7 +88,7 @@ void BinInsertSort(RecType R[], int n)
             }
             
             for(j = i - 1; j >= high+1; j--)  // high+1是插入位置
-                R[J+1] = R[j];  // ???
+                R[j+1] = R[j];  // 为待插入元素腾出位置
             R[high+1] = tmp;  // 插入tmp
             
         }
@@ -310,7 +314,7 @@ void HeapSort(RecType R[], int n)
 
 
 ## 五、归并排序
-- **归并排序**(merge sort)：多次将两个或两个以上的有序表合并成一个新的有序表。
+- **归并排序**(merge sort)：多次将两个或两个以上的有序表合并成一个新的有序表；先划分，再排序。
 - **二路归并排序**(2-way merge sort)：多次将相邻两个的有序表合并成一个新有序表的排序方法，是最简单的归并排序
 
 ```C
@@ -355,7 +359,10 @@ void Merge(RecType R[], int low, int mid, int high)  // Merge()：一次二路�
 void MergePass(RecType R[], int length, int n)  // 对整个排序序列进行一趟归并排序
 {
     int i;
-    for(i = 0; i + 2 * length - 1 < n; i = i + 2 *length)
+    for(i = 0; i + 2 * length - 1 < n; i = i + 2 *length)  // 这里应应该是已经进行了划分，通过i + 2 * length - 1
+    
+    // 时间复杂度
+    // 空间复杂度
 ```
 
 
