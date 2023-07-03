@@ -878,7 +878,7 @@ class ISplitter
 {
 public:
 	virtual void split() = 0;
-	virtual ISplitter* Clone() = 0;  // 通过克隆自己来创建
+	virtual ISplitter* Clone() = 0;  // 通过克隆自己来创建对象
 	virtual ~ISplitter() {};
 };
 
