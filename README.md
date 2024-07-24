@@ -1,10 +1,11 @@
 # Computer-Basics-Learning
-记录计算机基础的学习
 
-- 软件工程导论（类图如何画）
-- 计算机网络
+- [数据结构](Algorithm-And-Data-Structure)
+- [设计模式](Design-Model)
+- [计算机网络](Computer-Network)
+- [数据库](Database)
 - 汇编语言
-- 数据结构
+- 编译原理
 - 操作系统
-- 数据库
-- 组成原理
+- 软件工程
+
